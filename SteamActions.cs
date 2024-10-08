@@ -1,11 +1,5 @@
-using System.Collections.Concurrent;
-using System.ComponentModel;
-using System.Linq;
-using System.Reflection.Metadata.Ecma335;
-using System.Runtime.InteropServices;
-using System.Security.Cryptography.X509Certificates;
-
 namespace SteamUsers;
+
 public class SteamActions
 {
     /// <summary>
@@ -295,22 +289,22 @@ public class SteamActions
         {
             switch(steamGame.Price)
             {
-            case double n when steamGame.Price >= 0 && steamGame.Price <= 10:
+            case double when steamGame.Price >= 0 && steamGame.Price <= 10:
             Console.WriteLine($"Game price is very cheap: " + steamGame.Name);
             break;
-            case double n when steamGame.Price > 10 && steamGame.Price <= 20:
+            case double when steamGame.Price > 10 && steamGame.Price <= 20:
             Console.WriteLine($"Game price is average: " + steamGame.Name);
             break;
-            case double n when steamGame.Price > 20 && steamGame.Price <= 30:
+            case double when steamGame.Price > 20 && steamGame.Price <= 30:
             Console.WriteLine($"Game price is good: " + steamGame.Name);
             break;
-            case double n when steamGame.Price > 40 && steamGame.Price <= 50:
+            case double when steamGame.Price > 40 && steamGame.Price <= 50:
             Console.WriteLine($"Game price is high: " + steamGame.Name);
             break;
-            case double n when steamGame.Price > 50 && steamGame.Price <= 60:
+            case double when steamGame.Price > 50 && steamGame.Price <= 60:
             Console.WriteLine($"Game price is AAA: " + steamGame.Name);
             break;
-            case double n when steamGame.Price > 60 :
+            case double when steamGame.Price > 60 :
             Console.WriteLine($"Wait for discount: " + steamGame.Name);
             break;
             }
@@ -329,16 +323,16 @@ public class SteamActions
         {
             switch(steamGame.Price)
             {
-                case double n when steamGame.Price >= 0 && steamGame.Price < 20:
+                case double when steamGame.Price >= 0 && steamGame.Price < 20:
                 steamGameUpto20List.Add(steamGame);
                 break;
-                case double n when steamGame.Price > 20 && steamGame.Price <=40:
+                case double when steamGame.Price > 20 && steamGame.Price <=40:
                 steamGameUpto40List.Add(steamGame);
                 break;
-                case double n when steamGame.Price > 40 && steamGame.Price <=60:
+                case double when steamGame.Price > 40 && steamGame.Price <=60:
                 steamGameUpto60List.Add(steamGame);
                 break;
-                case double n when steamGame.Price > 60 && steamGame.Price <=80:
+                case double when steamGame.Price > 60 && steamGame.Price <=80:
                 steamGameUpto80List.Add(steamGame);
                 break;
             }

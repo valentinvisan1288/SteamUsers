@@ -17,3 +17,4 @@
 /Users/amonvelka/SteamUsers/obj/Debug/net8.0/SteamUsers.pdb
 /Users/amonvelka/SteamUsers/obj/Debug/net8.0/SteamUsers.genruntimeconfig.cache
 /Users/amonvelka/SteamUsers/obj/Debug/net8.0/ref/SteamUsers.dll
+/Users/amonvelka/SteamUsers/obj/Debug/net8.0/SteamUsers.sourcelink.json

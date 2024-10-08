@@ -1,8 +1,8 @@
 ﻿using SteamUsers;
 
-public class Program
+public class OldProgram
 {
-    public static void Main(string[] args)
+    public static void MainOld(string[] args)
     {
 
         //Pisica p1 = new Pisica();
@@ -86,8 +86,6 @@ public class Program
         SteamActions.MustPlayListIterator(mustPlayList, mayPlayList);
         SteamActions.IntervalPriceChecker(steamGamesList);
         SteamActions.IntervalPriceLister(steamGamesList);
-
-
     }
 }
 
