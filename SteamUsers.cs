@@ -1,10 +1,11 @@
 ﻿namespace SteamUsers;
 
-public class SteamUsers
+public class SteamUser
 {
 private string? userName;
 private int profileLevel;
 private GamerLevel gamerLevel;
+private List<SteamGame> steamGameList;
 
 public string? UserName
 {
@@ -30,7 +31,6 @@ public int ProfileLevel
     }
 }
 
-public required List<SteamGame> SteamGame;
 public GamerLevel GamerLevel
 {
     get
@@ -41,6 +41,26 @@ public GamerLevel GamerLevel
     {
         gamerLevel = value;
     }
+}
+
+public List<SteamGame>SteamGameList
+{
+    get
+    {
+        return steamGameList;
+    }
+    set
+    {
+        steamGameList = value;
+    }
+}
+
+public SteamUser(string steamUserName, int profileLevel, GamerLevel gamerLevel, List<SteamGame> steamGameList)
+{
+   this.userName = steamUserName;
+   this.profileLevel = profileLevel;
+   this.gamerLevel = gamerLevel;
+   this.steamGameList = steamGameList;
 }
 
 }

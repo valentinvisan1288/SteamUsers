@@ -18,6 +18,13 @@ public class ConsoleProgram
 
         SteamMethods.ForMethod(firstSteamGameList);
 
+        SteamUser steamUserInitial = new SteamUser("User One", 2, GamerLevel.Noob, firstSteamGameList);
+        SteamUser Bob = new SteamUser("Displazya", 37, GamerLevel.Intermediate, [dota, slayTheSpire]);
+
+        SteamMethods.WhileMethod(firstSteamGameList);
+
+
+
     }
 }
 

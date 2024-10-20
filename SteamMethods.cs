@@ -16,18 +16,24 @@ public class SteamMethods
     public static void ForMethod(List<SteamGame> steamGameForList)
     {
         var maxLengthSteamGameForList = steamGameForList.Count();
-        List<SteamGame> steamGame = new List<SteamGame>(); 
         for (int i = 0; i < maxLengthSteamGameForList ; i++)
         {
             
-            Console.WriteLine($"I have iterated " + steamGame);
-
+            Console.WriteLine($"I have iterated " + steamGameForList[i].Name);
         }
 
     }
 
+    public static void WhileMethod(List<SteamGame> steamGameListWhile)
+    {
+        int i = 0;
+        while ( i < steamGameListWhile.Count())
+        {
+            System.Console.WriteLine($"Steam Game Name is {steamGameListWhile[i].Name}");
+            i++;
+        }
 
-
+    }
 
 
 

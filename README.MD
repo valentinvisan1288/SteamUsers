@@ -73,9 +73,7 @@ si daca elementul curent este mai mare decat urmatorul element, atunci ii ia val
 
 [x] Folosete un IF intr-un FOREACH
 
-[ ] Revizuieste Inheritance => fa un exemplu in Pisica / Animal, instantieri, de adaugat noi variabile
-[ ] Instante de SteamUsers
-[ ] Palindrom cu foreach
+
 [X] Rename Variables to be less confusing (ca si la "steamGameList")
 [X] o metoda care primeste ca parametru o lista de steamgames in care verificam daca jocurile din lista au rating mai mare de 8 si daca sunt terminate, le punem intr-o alta lista 'MustPlay'. Daca nu, le punem in 'MaybePlay' (if - else if - else)
 [x] ternary operator intr-un "if else" scris anterior
@@ -101,5 +99,15 @@ OPT:
     6 - C
     5 - E
     0,4 - F
-C# For Loop
+
+[X]C# For Loop
 C# While si DoWhile
+
+[ ] Revizuieste Inheritance => fa un exemplu in Pisica / Animal, instantieri, de adaugat noi variabile
+[X] Instante de SteamUsers
+[ ] Palindrom cu foreach
+[ ] 10 obiecte cu 10 constructori expliciti
+[ ] Modificatori de acces
+[ ] ce este Static la Methods
+[ ] Method Overloading + BOB
+[ ] Method Overwritting + BOB
