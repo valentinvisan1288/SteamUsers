@@ -83,31 +83,34 @@ restul de intervale din 10 in 10 eur. Fiecare caz are mesaj printat diferit
 
 [X] O metoda care primeste ca parametru o lista de jocuri SteamGames si avem 4 intervale pentru pret. Fiecare interval adauga jocul intr-o lista. 4 intervale, 4 liste.
 
-OPT:
-    10 - A+
-    9 - A
-    7,8 - B
-    6 - C
-    5 - E
-    0,4 - F
 
-[] Create a C# program that calculates a student's grade from an integer. Ask the user for a number (x) and answer the following:
-
-    10 - A+
-    9 - A
-    7,8 - B
-    6 - C
-    5 - E
-    0,4 - F
 
 [X]C# For Loop
 C# While si DoWhile
-
-[ ] Revizuieste Inheritance => fa un exemplu in Pisica / Animal, instantieri, de adaugat noi variabile
 [X] Instante de SteamUsers
-[ ] Palindrom cu foreach
-[ ] 10 obiecte cu 10 constructori expliciti
-[ ] Modificatori de acces
-[ ] ce este Static la Methods
+
+
+[X] Revizuieste Inheritance => fa un exemplu in Pisica / Animal, instantieri, de adaugat noi variabile
+[X] Palindrom cu foreach
+[9/10] 10 obiecte cu 10 constructori expliciti
+
+[X] ce este Static la Methods
+        - Inseamna ca metoda apartine CLASEI
+          + Nu este o instanta a obiectului din clasa
+        - Metoda este asociata cu clasa obiectului, nu cu instanta acestuia
+
+[X] Create a C# program that calculates a student's grade from an integer. Ask the user for a number (x) and answer the following:
+
+    10 - A+
+    9 - A
+    7,8 - B 
+    6 - C
+    5 - E
+    0,4 - F
 [ ] Method Overloading + BOB
 [ ] Method Overwritting + BOB
+[ ] Modificatori de acces
+        - https://www.w3schools.com/cs/cs_access_modifiers.php
+[ ] In GradeConvertor() -> add exception handling + BOB
+https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/exceptions/
+[ ] de citit despre StringBuilder()

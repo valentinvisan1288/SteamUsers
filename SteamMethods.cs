@@ -1,3 +1,7 @@
+
+
+using System.Text;
+
 namespace SteamUsers;
 
 public class SteamMethods
@@ -29,8 +33,30 @@ public class SteamMethods
         int i = 0;
         while ( i < steamGameListWhile.Count())
         {
-            System.Console.WriteLine($"Steam Game Name is {steamGameListWhile[i].Name}");
+            Console.WriteLine($"Steam Game Name is {steamGameListWhile[i].Name}");
             i++;
+        }
+
+    }
+
+    public static void PalindromeForeach(string palindromForeach)
+    {
+        char[] arrayOfCharacters = palindromForeach.ToCharArray();
+        StringBuilder sb = new StringBuilder();
+
+        for (int i = arrayOfCharacters.Count() - 1; i >= 0 ; i--)
+        {
+            
+            sb.Append(arrayOfCharacters[i]);
+        }
+
+        if (palindromForeach == sb.ToString())
+        {
+            Console.WriteLine("this word is a palindome");
+        } 
+        else
+        {
+            Console.WriteLine("this word is NOT a palindome");
         }
 
     }
@@ -39,5 +65,6 @@ public class SteamMethods
 
 
 
+
+
 }
-    
