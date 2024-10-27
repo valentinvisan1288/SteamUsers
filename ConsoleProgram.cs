@@ -1,4 +1,6 @@
 using SteamUsers;
+using Animale;
+using Homework;
 
 public class ConsoleProgram
 {
@@ -25,6 +27,17 @@ public class ConsoleProgram
 
 
 
+
+
+        Console.WriteLine($"\n ======== Homework 21.10 ======== \n");
+        ObjectNine objectNine = new ObjectNine("vali", 36, [10,12,14,16]);
+        Pisica Pisica = new(4,"Cocolino",4);
+        Console.WriteLine( Pisica.Nume);
+        Caine caineUnu = new(3, "Tripod", 7, false);
+        Console.WriteLine(caineUnu.Varsta);
+        StudentGrade.GradeConverter();
+        SteamMethods.PalindromeForeach("asdfghjkl");
+        SteamMethods.PalindromeForeach("abba");
     }
 }
 
