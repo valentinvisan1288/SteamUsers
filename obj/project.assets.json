@@ -8,24 +8,25 @@
     "net8.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Bob\\.nuget\\packages\\": {}
+    "/Users/amonvelka/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\repoVly\\SteamUsers\\SteamUsers.csproj",
+      "projectUniqueName": "/Users/amonvelka/SteamUsers/SteamUsers.csproj",
       "projectName": "SteamUsers",
-      "projectPath": "D:\\repoVly\\SteamUsers\\SteamUsers.csproj",
-      "packagesPath": "C:\\Users\\Bob\\.nuget\\packages\\",
-      "outputPath": "D:\\repoVly\\SteamUsers\\obj\\",
+      "projectPath": "/Users/amonvelka/SteamUsers/SteamUsers.csproj",
+      "packagesPath": "/Users/amonvelka/.nuget/packages/",
+      "outputPath": "/Users/amonvelka/SteamUsers/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Bob\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "/Users/amonvelka/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
+        "/usr/local/share/dotnet/library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -64,7 +65,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.401/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
