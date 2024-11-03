@@ -1,3 +1,5 @@
+using Microsoft.VisualBasic;
+
 namespace SteamUsers;
 
 public class SteamActions
@@ -74,6 +76,12 @@ public class SteamActions
     {
         gamePrice *=2;
         Console.WriteLine($"Doubled price is " + gamePrice);
+    }
+
+        public static void DoublePrice (double gamePrice, string reason)
+    {
+        gamePrice *=2;
+        Console.WriteLine($"Doubled price is " + gamePrice + "due to " + reason);
     }
 
     public static List<double> PriceExtractor(List<SteamGame> steamGameExtractedList)

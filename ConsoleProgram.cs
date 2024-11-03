@@ -38,6 +38,9 @@ public class ConsoleProgram
         StudentGrade.GradeConverter();
         SteamMethods.PalindromeForeach("asdfghjkl");
         SteamMethods.PalindromeForeach("abba");
+        SteamMethods.PalindromeForeach("xxx");
+
+
     }
 }
 

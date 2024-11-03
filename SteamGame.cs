@@ -66,6 +66,7 @@ public bool IsFinished
     }
 }
 
+//TO DO @Ramon Remove comments
 // public Cat(String name, int age, double kilos)
 //     {
 //         this.name = name;
@@ -81,6 +82,16 @@ public SteamGame (string name1, double price1, string genre1, int rating1, bool 
     this.rating = rating1;
     this.isFinished = isFinished1;
 }
+
+public SteamGame (string name1, double price1, string genre1, int rating1)
+{
+    this.name = name1;
+    this.price = price1;
+    this.genre = genre1;
+    this.rating = rating1;
+
+}
+
 
 
 
