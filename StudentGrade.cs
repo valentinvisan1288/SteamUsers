@@ -23,12 +23,14 @@ public class StudentGrade
     
 
     public static void GradeConverter()
-    {
-        int grade;
-        Console.WriteLine("Enter student grade");
-        grade = int.Parse(Console.ReadLine());
-        switch(grade)
+    { 
+        try
         {
+            int grade;
+            Console.WriteLine("Enter student grade");
+            grade = int.Parse(Console.ReadLine());
+            switch(grade)
+            {
             case 10:
             Console.WriteLine("Student grade converted to A+");
             break;
@@ -48,9 +50,16 @@ public class StudentGrade
             case int when grade < 4:
             Console.WriteLine("Student grade converted to F");
             break;
-            default:
-            Console.WriteLine("Please enter student grade between 0 and 10, only");
-            break;
+
+            }
+        }
+        catch (FormatException e)
+        {
+            Console.WriteLine(e.Message);
+        }
+        catch (IndexOutOfRangeException e)
+        {
+            Console.WriteLine(e.Message);
         }
 
     }

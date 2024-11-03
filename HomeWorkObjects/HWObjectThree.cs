@@ -43,10 +43,10 @@ public class ObjectThree
         }
     }
 
-    public ObjectThree(string stringThree1, string stringThreeOne1, List<SteamGame> SteamGameThree1)
+    public ObjectThree(string stringThree1, string stringThreeOne, List<SteamGame> SteamGameThree1)
     {
         this.StringThreeOne = stringThree1;
-        this.StringThree = StringThree;
+        this.StringThree = stringThreeOne;
         this.SteamGameThree = SteamGameThree1;
     }
 }
