@@ -107,8 +107,8 @@ C# While si DoWhile
     6 - C
     5 - E
     0,4 - F
-[ ] Method Overloading + BOB
-[ ] Method Overwritting + BOB
+[x] Method Overloading + BOB
+[x] Method Overwritting + BOB
 [ ] Modificatori de acces
         - https://www.w3schools.com/cs/cs_access_modifiers.php
 [ ] In GradeConvertor() -> add exception handling + BOB
