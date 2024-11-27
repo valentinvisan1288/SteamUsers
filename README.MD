@@ -109,8 +109,16 @@ C# While si DoWhile
     0,4 - F
 [x] Method Overloading + BOB
 [x] Method Overwritting + BOB
-[ ] Modificatori de acces
+[X] de citit despre StringBuilder()
+
+[241] Modificatori de acces
         - https://www.w3schools.com/cs/cs_access_modifiers.php
-[ ] In GradeConvertor() -> add exception handling + BOB
 https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/exceptions/
-[ ] de citit despre StringBuilder()
+[136] comparatii recursive
+[x] bubble sort - https://dotnettutorials.net/lesson/bubble-sort-algorithm-in-csharp/
+[237] ce face list.Sort()?
+[158] un array de int care este dat ca si parametru. Facem o metoda care sa gaseasca cel mai mare numar si cel mai mic, sa faca average-ul lor, sa mi-o intoarca invers si atat. e de ajuns. cum vede bob chestia asta?
+vali are 4 metode aicea. Prima metoda primeste parametrul array de int, apoi alte 4 metode care indeplinesc cerintele
+       // steamMethod.ArrayOperators([12345],Average)
+[218] de extins SteamMethods.Calculator: cum facem daca nu stim cati parametrii (numere) introducem?
+[28] In GradeConvertor() -> add exception handling + BOB

@@ -1,6 +1,7 @@
 using SteamUsers;
 using Animale;
 using Homework;
+using System.Security.Cryptography.X509Certificates;
 
 public class ConsoleProgram
 {
@@ -41,6 +42,31 @@ public class ConsoleProgram
         SteamMethods.PalindromeForeach("xxx");
 
 
+        Console.WriteLine($"\n ======== 16.11 ======== \n");
+        string randomLetters = "abc opq";
+        SteamMethods.SpaceTrimmer(randomLetters);
+        List<int> randomNumbers = [56137];
+        SteamMethods.NumberSorter();
+
+        //SteamMethods.GuessingGame();
+        SteamMethods.Calculator("Subtraction",[212, 468]);
+
+        Console.WriteLine($"\n ======== 23.11 ======== \n");
+        SteamMethods.ArrayOperatorHighestNumberFinder([7,3,2,8,1,9,06,1000]);
+        SteamMethods.ArrayOperatorLowestNumberFinder([7,3,2,8,1,9,06,-100]);
+        SteamMethods.ArrayOperatorAverageCalculator([7,3,2,8,1,9]);
+        SteamMethods.ArrayOperatorAverageCalculator([100,1000,88888]);
+        SteamMethods.ArrayOperatorReverser([7,3,2,8,1,9]);
+        Console.WriteLine($"\n ======== With Delegate ======== \n");
+        SteamMethods.ArrayOperator([5,16,2,80,0,4], SteamMethods.ArrayOperatorHighestNumberFinder);
+        SteamMethods.ArrayOperator([5,16,2,80,0,4], SteamMethods.ArrayOperatorLowestNumberFinder);
+        SteamMethods.ArrayOperator([5,16,2,80,0,4], SteamMethods.ArrayOperatorReverser);
+        SteamMethods.ArrayOperator([5,16,2,80,0,4], SteamMethods.ArrayOperatorAverageCalculator);
+        SteamMethods.Calculator("Sum",[10, 30, 4, 8, 44]);
+        SteamMethods.Calculator("Subtraction",[10, 5]);
+        SteamMethods.Calculator("Multiplication",[1, 5, 5]);
+        SteamMethods.Calculator("Multiplication",[0,1000]);
+        SteamMethods.Calculator("Division",[1000, 10]);
     }
 }
 
