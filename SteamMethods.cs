@@ -212,7 +212,6 @@ public static void ArrayOperatorReverser(int[] integers)
         reversedArray[i] = integers[j];
     }
     Console.WriteLine(string.Join(", ", reversedArray));
-   //Console.WriteLine(integers.ToArray().Reverse());
 }
 
 public static void Calculator(string stringOne, params int[] integers)
@@ -228,29 +227,43 @@ public static void Calculator(string stringOne, params int[] integers)
             Console.WriteLine("Suma este " + result);
             break;
         case "Subtraction":
-            for (int i = 0; i < integers.Length; i++)
+        int resultTemp = 0;
+        int resultSum = 0;
+            for (int i = 0; i < integers.Length - 1; i++)
             {
-                result -= integers[i];
+                for (i = 1; i < integers.Length; i++)
+                {
+                resultSum += integers[i];
+                } 
             }
-            Console.WriteLine("Diferenta este " + result);
+            resultTemp = integers[0] - (resultSum);
+            Console.WriteLine("Diferenta este " + resultTemp);
             break;
         case "Multiplication":
+        int resultTempMult = 1;
             for (int i = 0; i < integers.Length; i++)
             {
-                result *= integers[i];
+                
+               resultTempMult *= integers[i];
             }
-            Console.WriteLine("Produsul este " + result);
+            Console.WriteLine("Produsul este " + resultTempMult);
             break;
         case "Division":
-            for (int i = 0; i < integers.Length; i++)
+            int resultTempDiv = integers[0];
+            for (int i = 0; i < integers.Length - 1; i++)
             {
-                result /= integers[i];
+                resultTempDiv = resultTempDiv / integers[i+1];
             }
-            Console.WriteLine("Catul este " + result);
+            Console.WriteLine("Catul este " + resultTempDiv);
             break;
     }
 }
-    
+
+
+// 20 - (5 + 3 + 1)
+// 20 - 5 - 3 - 1
+// 1000 / 10 / 5 / 8
+
 // list.Sort() - foloseste interfata IComparer<T>. 
 // Sorteaza toate elementele unei liste sau o parte din ele
 // Poate folosi si Comparer<T>, care este un "delegate"

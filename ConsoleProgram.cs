@@ -1,7 +1,6 @@
 using SteamUsers;
 using Animale;
 using Homework;
-using System.Security.Cryptography.X509Certificates;
 
 public class ConsoleProgram
 {
@@ -26,17 +25,13 @@ public class ConsoleProgram
 
         SteamMethods.WhileMethod(firstSteamGameList);
 
-
-
-
-
         Console.WriteLine($"\n ======== Homework 21.10 ======== \n");
         ObjectNine objectNine = new ObjectNine("vali", 36, [10,12,14,16]);
         Pisica Pisica = new(4,"Cocolino",4);
         Console.WriteLine( Pisica.Nume);
         Caine caineUnu = new(3, "Tripod", 7, false);
         Console.WriteLine(caineUnu.Varsta);
-        StudentGrade.GradeConverter();
+       // StudentGrade.GradeConverter();
         SteamMethods.PalindromeForeach("asdfghjkl");
         SteamMethods.PalindromeForeach("abba");
         SteamMethods.PalindromeForeach("xxx");
@@ -49,7 +44,7 @@ public class ConsoleProgram
         SteamMethods.NumberSorter();
 
         //SteamMethods.GuessingGame();
-        SteamMethods.Calculator("Subtraction",[212, 468]);
+        //SteamMethods.Calculator("Subtraction",[212, 468]);
 
         Console.WriteLine($"\n ======== 23.11 ======== \n");
         SteamMethods.ArrayOperatorHighestNumberFinder([7,3,2,8,1,9,06,1000]);
@@ -60,13 +55,14 @@ public class ConsoleProgram
         Console.WriteLine($"\n ======== With Delegate ======== \n");
         SteamMethods.ArrayOperator([5,16,2,80,0,4], SteamMethods.ArrayOperatorHighestNumberFinder);
         SteamMethods.ArrayOperator([5,16,2,80,0,4], SteamMethods.ArrayOperatorLowestNumberFinder);
-        SteamMethods.ArrayOperator([5,16,2,80,0,4], SteamMethods.ArrayOperatorReverser);
+        SteamMethods.ArrayOperator([1,5,8], SteamMethods.ArrayOperatorReverser);
         SteamMethods.ArrayOperator([5,16,2,80,0,4], SteamMethods.ArrayOperatorAverageCalculator);
-        SteamMethods.Calculator("Sum",[10, 30, 4, 8, 44]);
-        SteamMethods.Calculator("Subtraction",[10, 5]);
+        SteamMethods.Calculator("Sum",[2,2]);
+        SteamMethods.Calculator("Subtraction",[20, 5, 3, 1]);
         SteamMethods.Calculator("Multiplication",[1, 5, 5]);
         SteamMethods.Calculator("Multiplication",[0,1000]);
-        SteamMethods.Calculator("Division",[1000, 10]);
+        SteamMethods.Calculator("Division",[1000, 10 , 10 , 2]);
     }
 }
+
 
